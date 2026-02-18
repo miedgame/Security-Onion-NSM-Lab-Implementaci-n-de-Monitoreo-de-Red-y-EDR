@@ -23,7 +23,7 @@ Proyecto de diseño y despliegue de una infraestructura de Monitoreo de Segurida
 -  Elaborar documentación técnica detallada sobre el proceso de despliegue, configuración y resolución de problemas (troubleshooting), sirviendo como base de conocimiento transferible para futuras implementaciones
 
 
-6.  Resultados obtenidos:
+5.  Resultados obtenidos:
 
 -  Despliegue de la infraestructura virtual en Proxmox e instalación del sistema operativo Security Onion en modo Standalone.
 -  Configuración del Bridge de Proxmox en modo promiscuo y ajuste del ageing a 0 (Modo Hub) para replicar tráfico hacia el sensor.
