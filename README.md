@@ -14,7 +14,16 @@ Proyecto de diseño y despliegue de una infraestructura de Monitoreo de Segurida
 -  32 GB Memoria RAM
 -  2 interfaces de red (1 de monitoreo y otra en modo promiscuo)
 
-4.  Resultados obtenidos:
+4.  Objetivos específicos:
+-  Implementar la arquitectura base de Security Onion sobre el hipervisor Proxmox VE, optimizando la asignación de recursos de hardware virtual para garantizar la estabilidad de los servicios de Elastic Stack
+-  Configurar una arquitectura de despliegue tipo Standalone, centralizando los roles de gestión, búsqueda y sensores de red para consolidar la ingesta de tráfico y logs en un único nodo unificado
+-  Simular un entorno de red corporativo mediante el despliegue de máquinas virtuales cliente (Windows/Linux) para generar tráfico de red y telemetría real que alimente el sistema de detección
+-  Desplegar y configurar agentes de punto final (Endpoint Agents) en los servidores clientes, aplicando políticas de recolección de logs personalizadas para asegurar la visibilidad completa de eventos del sistema operativo
+-  Diseñar tableros de control (Dashboards) y consultas de Threat Hunting personalizadas en Kibana/Security Onion Console, facilitando la interpretación de alertas y la reducción del tiempo de análisis de incidentes
+-  Elaborar documentación técnica detallada sobre el proceso de despliegue, configuración y resolución de problemas (troubleshooting), sirviendo como base de conocimiento transferible para futuras implementaciones
+
+
+6.  Resultados obtenidos:
 
 -  Despliegue de la infraestructura virtual en Proxmox e instalación del sistema operativo Security Onion en modo Standalone.
 -  Configuración del Bridge de Proxmox en modo promiscuo y ajuste del ageing a 0 (Modo Hub) para replicar tráfico hacia el sensor.
@@ -29,7 +38,7 @@ Proyecto de diseño y despliegue de una infraestructura de Monitoreo de Segurida
 -  Activación de la integración "Elastic Defend" y generación de actividad para la creación inicial de índices de EDR.
 -  Optimización de la visualización en Kibana mediante la corrección de métricas de Sysmon, reemplazando la clasificación por severidad (vacía por defecto) por la clasificación basada en Event ID, logrando una interpretación efectiva de la actividad del endpoint.
 
-5.  Desafíos y soluciones:
+6.  Desafíos y soluciones:
 
     a. Visibilidad de Red en Entornos Virtuales (Proxmox)
 •	Desafío: La interfaz de monitoreo del sensor no recibía copia del tráfico de la red. El Linux Bridge (vmbr0) de Proxmox actuaba como un switch eficiente, descartando tráfico unicast no destinado al sensor, provocando "ceguera" en el NIDS.
