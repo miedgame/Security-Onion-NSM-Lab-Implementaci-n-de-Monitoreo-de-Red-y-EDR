@@ -21,7 +21,7 @@ Se realizó un despliegue de **Security Onion** en formato **Standalone**, utili
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f6ef9a1c-ec96-4f4a-b3df-129e949d100b" width="70%" alt="Arquitectura de Red">
   <br>
-  <em>Figura 1: Topología lógica del Laboratorio en el entorno Proxmox.</em>
+  <em> Topología lógica del Laboratorio en el entorno Proxmox.</em>
 </p>
 
 ### 3. Especificaciones Técnicas del Nodo
