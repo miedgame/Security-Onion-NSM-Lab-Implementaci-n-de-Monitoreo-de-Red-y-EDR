@@ -48,6 +48,12 @@ Para asegurar la estabilidad del **Elastic Stack** y el procesamiento en tiempo 
 ---
 
 ### 5. Resultados Obtenidos e Implementación Técnica
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/301497ed-fe8e-4fd7-980f-424b14171fb1" width="60%">
+  <br>
+  <em>Flujo de trabajo del analista</em>
+</p>
+
 
 #### A. Despliegue de Infraestructura y Visibilidad de Red
 Se configuró el bridge virtual de Proxmox para eliminar la "ceguera" del sensor, permitiendo que el tráfico unicast de la red fuera visible para el NIDS.
